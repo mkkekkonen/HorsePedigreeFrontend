@@ -25,12 +25,34 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "input": "src/assets/images",
+                "glob": "**/*",
+                "output": "/images/"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "src/assets/css/bootstrap.css",
+                "bundleName": "bootstrap"
+              },
+              {
+                "input": "src/assets/css/bootstrap-grid.css",
+                "bundleName": "bootstrap-grid"
+              },
+              {
+                "input": "src/assets/css/bootstrap-reboot.css",
+                "bundleName": "bootstrap-reboot"
+              }
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "src/assets/js/bootstrap.bundle.js",
+                "bundleName": "bootstrap-bundle"
+              }
+            ]
           },
           "configurations": {
             "production": {
