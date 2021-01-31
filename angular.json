@@ -49,6 +49,14 @@
             ],
             "scripts": [
               {
+                "input": "src/assets/js/jquery-3.5.1.min.js",
+                "bundleName": "jquery"
+              },
+              {
+                "input": "src/assets/js/popper.min.js",
+                "bundleName": "popper"
+              },
+              {
                 "input": "src/assets/js/bootstrap.bundle.js",
                 "bundleName": "bootstrap-bundle"
               }

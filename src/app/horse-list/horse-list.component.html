@@ -1,0 +1,30 @@
+<h1>Horses 🐎</h1>
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Breed</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Color</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">Height (cm)</th>
+      <th scope="col">Sire</th>
+      <th scope="col">Dam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let horse of horses">
+      <td>{{horse.id}}</td>
+      <td>{{horse.name}}</td>
+      <td>{{horse.breedId}}</td>
+      <td>{{horse.gender}}</td>
+      <td>{{horse.color}}</td>
+      <td>{{horse.dateOfBirth}}</td>
+      <td>{{horse.heightCm}}</td>
+      <td>{{horse.sireName}}</td>
+      <td>{{horse.damName}}</td>
+    </tr>
+  </tbody>
+</table>
