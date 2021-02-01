@@ -51,4 +51,8 @@ export class ApiService {
   getHorses() {
     return this.http.get<IHorse[]>(`${getBaseUrl()}/horse`);
   }
+
+  getBreeds() {
+    return this.http.get<IBreed[]>(`${getBaseUrl()}/breed`);
+  }
 }

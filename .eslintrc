@@ -17,12 +17,13 @@
         "jasmine"
     ],
     "rules": {
+        "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "Observable|throwError|catchError|retry" }],
         "class-methods-use-this": "off",
         "import/extensions": "off",
         "import/prefer-default-export": "off",
         "no-empty-function": ["error", { "allow": ["constructors", "methods"] }],
         "no-shadow": "off",
-        "no-unused-vars": ["error", { "args": "none" }],
+        "no-unused-vars": ["off"],
         "no-useless-constructor": "off"
     },
     "settings": {

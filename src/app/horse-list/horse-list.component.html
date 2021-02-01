@@ -18,9 +18,9 @@
     <tr *ngFor="let horse of horses">
       <td>{{horse.id}}</td>
       <td>{{horse.name}}</td>
-      <td>{{horse.breedId}}</td>
-      <td>{{horse.gender}}</td>
-      <td>{{horse.color}}</td>
+      <td>{{horse.breedId | breed: breeds}}</td>
+      <td>{{horse.gender | gender}}</td>
+      <td>{{horse.color | color}}</td>
       <td>{{horse.dateOfBirth}}</td>
       <td>{{horse.heightCm}}</td>
       <td>{{horse.sireName}}</td>

@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HorseListComponent } from './horse-list/horse-list.component';
 import { BreedPipe } from './breed.pipe';
+import { GenderPipe } from './gender.pipe';
+import { ColorPipe } from './color.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { BreedPipe } from './breed.pipe';
     HomeComponent,
     HorseListComponent,
     BreedPipe,
+    GenderPipe,
+    ColorPipe,
   ],
   imports: [
     BrowserModule,
