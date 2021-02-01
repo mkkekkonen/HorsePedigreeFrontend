@@ -40,18 +40,15 @@ export interface IHorse {
   damId: number | null
 }
 
+const getBaseUrl = () => (isDevMode() ? 'https://localhost:5001' : 'https://localhost:5001');
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
-
   constructor(private http: HttpClient) { }
 
-  get baseUrl() {
-    return isDevMode() ? 'https://localhost:5001' : 'https://localhost:5001';
-  }
-
   getHorses() {
-    return this.http.get<IHorse[]>(`${this.baseUrl}/horse`);
+    return this.http.get<IHorse[]>(`${getBaseUrl()}/horse`);
   }
 }

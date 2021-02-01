@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HorseListComponent } from './horse-list/horse-list.component';
+import { BreedPipe } from './breed.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HorseListComponent
+    HorseListComponent,
+    BreedPipe,
   ],
   imports: [
     BrowserModule,
@@ -19,6 +21,6 @@ import { HorseListComponent } from './horse-list/horse-list.component';
     HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

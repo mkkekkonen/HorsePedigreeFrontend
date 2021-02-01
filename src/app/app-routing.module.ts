@@ -6,11 +6,11 @@ import { HorseListComponent } from './horse-list/horse-list.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'horses', component: HorseListComponent }
+  { path: 'horses', component: HorseListComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
